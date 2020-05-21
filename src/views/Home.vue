@@ -1,16 +1,8 @@
 <template>
 	<div class="home">
 		<vue-plyr ref="plyr">
-			<video poster="poster.png" src="video.mp4">
-				<source src="video-720p.mp4" type="video/mp4" size="720" />
-				<source src="video-1080p.mp4" type="video/mp4" size="1080" />
-				<track
-					kind="captions"
-					label="English"
-					srclang="en"
-					src="captions-en.vtt"
-					default
-				/>
+			<video>
+				
 			</video>
 		</vue-plyr>
 	</div>
@@ -24,7 +16,7 @@ export default {
 
 	data() {
 		return {
-			video: 'audio'
+			video: 'video'
 		}
 	},
 
