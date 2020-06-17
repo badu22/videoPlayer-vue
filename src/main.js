@@ -8,18 +8,12 @@ import 'vue-simple-markdown/dist/vue-simple-markdown.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-
 Vue.use(Buefy)
 Vue.use(VueSimpleMarkdown)
 Vue.use(VueAxios, axios)
 
 // The second argument is optional and sets the default config values for every player.
-Vue.use(VuePlyr, {
-	plyr: {
-		fullscreen: { enabled: false }
-	},
-	emit: ['ended']
-})
+Vue.use(VuePlyr)
 
 Vue.config.productionTip = false
 
